@@ -1,2 +1,2 @@
-# Curso_C++
- Curso de C++
+# Curso C++
+ Minha tragetória fazendo um curso de C++
