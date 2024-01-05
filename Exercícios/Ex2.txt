@@ -1,0 +1,15 @@
+Em um campeonato, durante o mês de janeiro, foram anotados diariamente em cartões,
+quantos gols foram marcados. Crie um programa em CS capaz de ler estes cartões e 
+imprimir a média de gols do mês de janeiro, lembrando que janeiro possui 31 dias.
+
+E00- Insira valor 0 em E05 e E09
+E01- Pegue um cartão e some seu valor em E09
+E02- Adicione 1 ao valor de E07
+E03- Se E07 for menor que 30, vá para E01
+E04- Divida o valor de E09 por 31 e guarde o resultado em E10
+E05- Mostre E10
+E06- Pare
+E07-
+E08-
+E09-
+E10-

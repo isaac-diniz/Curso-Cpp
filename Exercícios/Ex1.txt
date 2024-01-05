@@ -1,0 +1,16 @@
+Faça um programa para ler um conjunto de notas de alunos em cartões, 
+calcular e imprimir quantos alunos foram aprovados.
+Obs1: Para passar, a nota do aluno deve ser maior ou igual a 60.
+Obs2: O último cartão (flag) tem  valor -1.
+
+E00- Insira o valor 0 em E10
+E01- Pegue um cartão e copie seu valor em E09
+E02- Se esse cartão tiver valor maior ou igual a 60, adicione 1 ao valor de E10, vá para E01
+E03- Se não, se o cartão tiver valor inferior a 60 e diferente de -1, vá para E01
+E04- Se não, vá para E05
+E05- Mostre o valor total de E10
+E06- Pare
+E07- 
+E08-
+E09-
+E10-
