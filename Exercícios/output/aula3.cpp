@@ -2,8 +2,10 @@
 
 using namespace std;
 
-int main(int agrc, char const *argv[]){
-    cout<<"Hello world";
+int main(){
+	
+    cout<<"Hello world"<<endl;
+    
     system("PAUSE");
     return 0;   
 }
