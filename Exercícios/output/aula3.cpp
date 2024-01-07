@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 	
-    cout<<"Hello world"<<endl;
+    cout<<"Hello world\nCurso de C++\n";
     
     system("PAUSE");
     return 0;   
