@@ -1,10 +1,5 @@
 /*
-ALGORITMO
-DECLARE n1, n2, n3, n4, soma NUMÉRICO
-LEIA n1, n2, n3, n4
-soma ? n1 + n2 + n3 + n4
-ESCREVA soma
-FIM_ALGORITMO.
+Faça um programa que receba quatro números inteiros, calcule e mostre a soma desses números. 
 */
 
 #include <iostream>
