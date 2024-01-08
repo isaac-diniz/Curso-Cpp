@@ -28,5 +28,9 @@ int main(){
 	
 	cout << "\nO resutado final foi: " << result;
 	
+	result = result%4;
+	
+	cout << "\nO resto da divisão foi: " << result;
+	
 	return 0;
 }
