@@ -21,7 +21,24 @@ int main(){
 	
 	string exemploText="Isaac"; //diferente do char, armazena um texto ao invés de apenas um caractere
 	
-	cout << exemplos << "\n"<< exemploLetra << "\n" << exemploDecimal << "\n" << exemploDecimalMenos << "\n" << exemploSimples << "\n"<< exemploText << "\n";
+	cout << "Digite um numero inteiro para nosso exemplo: ";
+	cin >> exemplos;
+	
+	cout << "Digite uma letra: ";
+	cin >> exemploLetra;
+	
+	cout << "Digite um numero real para nosso exemplo: ";
+	cin >> exemploDecimal;
+	
+	cout << "Digite um numero real nao tao preciso para nosso exemplo: ";
+	cin >> exemploDecimalMenos;
+	
+	//não faz sentido receber um valor bool do usuário, já que não seria uma afirmação ou negação
+	
+	cout << "Digite um texto para nosso exemplo: ";
+	cin >> exemploText;
+	
+	cout << "\nInteiro: " << exemplos << "\nLetra: "<< exemploLetra << "\nDecimal: " << exemploDecimal << "\nDecimal 2: " << exemploDecimalMenos << "\nBool: " << exemploSimples << "\nTexto: "<< exemploText << "\n";
 	
 	return 0;
 }
