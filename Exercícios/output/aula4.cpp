@@ -21,12 +21,7 @@ int main(){
 	
 	string exemploText="Isaac"; //diferente do char, armazena um texto ao invés de apenas um caractere
 	
-	cout << exemplos << "\n";
-	cout << exemploLetra << "\n";
-	cout << exemploDecimal << "\n";
-	cout << exemploDecimalMenos << "\n";
-	cout << exemploSimples << "\n";
-	cout << exemploText << "\n";
+	cout << exemplos << "\n"<< exemploLetra << "\n" << exemploDecimal << "\n" << exemploDecimalMenos << "\n" << exemploSimples << "\n"<< exemploText << "\n";
 	
 	return 0;
 }
