@@ -29,7 +29,19 @@ int main()
 		default:
 			cout<<"numero digitado invalido";
 	}
+	/*
+	é possivel fazer um bloco de cases:
 	
+	[1, 2, 3] opção x
+	switch(x)
+	{
+		case1:
+		case2:
+		case3:
+			código da opção x;
+			break;
+	}
+	*/
 	
 	return 0;
 }
