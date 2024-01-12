@@ -44,21 +44,27 @@ int main(){
 		switch(cat){
 			case 1:
 				nPre=pre*1.05;
+				break;
 			case 2:
-				nPre=pre*1.08;	
+				nPre=pre*1.08;
+				break;
 			case 3:
 				nPre=pre*1.1;
+				break;
 			default:
-				cout<<"categoria inserida não existe!";
+				cout<<"categoria inserida nao existe!\n";
 		}
 	}else{
 		switch(cat){
 			case 1:
-				nPre=pre*1.12;			
+				nPre=pre*1.12;
+				break;			
 			case 2:
-				nPre=pre*1.15;				
+				nPre=pre*1.15;
+				break;				
 			case 3:
 				nPre=pre*1.18;
+				break;
 			default:
 				cout<<"categoria inserida não existe!";
 		}
