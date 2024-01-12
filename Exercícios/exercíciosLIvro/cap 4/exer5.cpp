@@ -1,7 +1,6 @@
 /*
 Faça um programa que receba dois números e execute as operações listadas a seguir, de acordo com a escolha
 do usuário. 
-EsCoLhA do usuári o oPErAção
 1 Média entre os números digitados
 2 Diferença do maior pelo menor
 3 Produto entre os números digitados
@@ -18,8 +17,8 @@ int main(){
 	cout<<"insira numero 1 e numero 2 respactivamente:\n";
 	cin>>n1;
 	cin>>n2;
-	cout<<"escolha uma das operações abaixo:\n";
-	cout<<"[1] média, [2] diferença do maior pelo menor, [3] produto entre os numeros, [4] divisão de n1 por n2\n";
+	cout<<"escolha uma das operacoes abaixo:\n";
+	cout<<"[1] media, [2] diferenca do maior pelo menor, [3] produto entre os numeros, [4] divisao de n1 por n2\n";
 	cin>>esc;
 	if (esc==1){
 		cout<<(n1+n2)/2;
