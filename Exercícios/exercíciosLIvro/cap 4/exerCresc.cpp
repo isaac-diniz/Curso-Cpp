@@ -5,11 +5,9 @@ Solicite ao usuário para inserir três números e os exiba em ordem crescente.
 using namespace std;
 int main(){
     double n1,n2,n3,temp;
-    cout<<"Digite o primeiro número: ";
+    cout<<"Digite o numeros em sequencia\n";
     cin>>n1;
-    cout<<"Digite o segundo número: ";
     cin>>n2;
-	cout<<"Digite o terceiro número: ";
     cin>>n3;
     if(n1>n2){
         temp=n1;
