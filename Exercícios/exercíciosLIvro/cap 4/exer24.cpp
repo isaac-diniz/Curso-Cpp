@@ -48,6 +48,8 @@ int main(){
 				nPre=pre*1.08;	
 			case 3:
 				nPre=pre*1.1;
+			default:
+				cout<<"categoria inserida não existe!";
 		}
 	}else{
 		switch(cat){
@@ -57,6 +59,8 @@ int main(){
 				nPre=pre*1.15;				
 			case 3:
 				nPre=pre*1.18;
+			default:
+				cout<<"categoria inserida não existe!";
 		}
 	}
 	if(cat==2 || sit=='R' ||sit=='r'){
