@@ -1,3 +1,7 @@
+/*
+Solicite ao usuário para inserir um número e determine se é um número primo.
+*/
+
 #include <iostream>
 #include <cmath>
 using namespace std;

@@ -1,3 +1,7 @@
+/*
+Crie uma calculadora que recebe um intervalo de números e exibe todos os números primos dentro desse intervalo.
+*/
+
 #include <iostream>
 #include <cmath>
 using namespace std;
