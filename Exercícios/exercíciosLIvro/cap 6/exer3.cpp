@@ -17,7 +17,8 @@ a mensagem Pedido atendido. Obrigado e volte sempre;
 #include <iostream>
 using namespace std;
 int main(){
-	int tam=10, cod[tam], tEst[tam], codC, contadorW=0, codP[contadorW], qntP[contadorW];
+	int tam=10, cod[tam], tEst[tam], codC, contadorW=0, codP[contadorW], qntP[contadorW], exis=0;
+	char desicao;
 	cout<<"=====================";
 	cout<<"\nParte do Proprietario\n";
 	cout<<"=====================\n";
@@ -36,18 +37,49 @@ int main(){
 		cout<<"Programa encerrado";
 		return 0;
 	}
+	cout<<"Começando as compras!\n\n";
 	do{
+		comprar:
 		contadorW++;
 		cout<<"Insira o codigo do produto "<<contadorW<<"\n";
-		cout<<"OBS: Inserir 0 nessa parte do programa o encerra";
+		cout<<"OBS: Inserir 0 nessa parte do programa encerra as compras\n";
 		cin>>codP[contadorW-1];
 		if(codP[contadorW-1]==0){
-			cout<<"Programa encerrado";
-			return 0;
+			cout<<"Compras encerradas! Siga para a proxima parte\n\n\n";
+			break;
 		}
-		cout<<"Insira a quantidade desejada do produto cujo codigo foi inserido agora: ";
-		cin>>qntP[contadorW-1];
+		for(int i=0; i<tam; i++){
+			if(codP[contadorW-1]==cod[i]){
+				exis=i+1;
+				break;
+			}
+		}
+		if(exis!=0){
+			quantidade:
+			cout<<"Produto em estoque!\nQuantidade: "<<tEst[exis-1]<<"\n";
+			cout<<"Insira a quantidade desejada do produto cujo codigo foi inserido atras: ";
+			cin>>qntP[contadorW-1];
+			if(qntP[contadorW]<=tEst[exis-1]){
+				tEst[exis-1]-=qntP[contadorW];
+			}else{
+				cout<<"não temos essa quantidade!\n\n";
+				goto quantidade;
+			}
+		}
+		else{
+			cout<<"Produto não existe\nDeseja continuar? [s]sim / [n]nao\n";
+			cin>>desicao;
+			if(desicao=='s' || desicao=='S'){
+			goto comprar;
+			}else{
+				break;
+			}
+		}
+		cout << "\nEstoque atualizado:\n";
+    	for (int i=0;i<tam; i++){
+        	cout<<"Código: "<< cod[i] << ", Estoque: " << tEst[i] <<"\n";
+    	}
+
 	}while(codP[contadorW]!=0);
-	
 	return 0;
 }
