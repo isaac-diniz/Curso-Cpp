@@ -56,7 +56,7 @@ int main() {
                 tEst[exis - 1] -= qntP[contadorW];
                 contadorW++;
             } else {
-                cout << "Não temos essa quantidade!\n\n";
+                cout << "Nao temos essa quantidade!\n\n";
             }
         } else {
             cout << "Produto não existe\nDeseja continuar? [s]sim / [n]nao\n";
@@ -69,10 +69,9 @@ int main() {
 
         cout << "\nEstoque atualizado:\n";
         for (int i = 0; i < tam; i++) {
-            cout << "Código: " << cod[i] << ", Estoque: " << tEst[i] << "\n";
+            cout << "Codigo: " << cod[i] << ", Estoque: " << tEst[i] << "\n";
         }
     }
-
     return 0;
 }
 
