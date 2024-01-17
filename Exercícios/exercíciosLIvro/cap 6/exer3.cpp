@@ -59,12 +59,13 @@ int main(){
 			cout<<"Produto em estoque!\nQuantidade: "<<tEst[exis-1]<<"\n";
 			cout<<"Insira a quantidade desejada do produto cujo codigo foi inserido atras: ";
 			cin>>qntP[contadorW-1];
-			if(qntP[contadorW]<=tEst[exis-1]){
-				tEst[exis-1]-=qntP[contadorW];
-			}else{
-				cout<<"não temos essa quantidade!\n\n";
-				goto quantidade;
+			if (qntP[contadorW - 1] <= tEst[exis - 1]) {
+    			tEst[exis - 1] -= qntP[contadorW - 1];
+			} else {
+    			cout << "não temos essa quantidade!\n\n";
+    			goto quantidade;
 			}
+			contadorW++;
 		}
 		else{
 			cout<<"Produto não existe\nDeseja continuar? [s]sim / [n]nao\n";
@@ -79,7 +80,6 @@ int main(){
     	for (int i=0;i<tam; i++){
         	cout<<"Código: "<< cod[i] << ", Estoque: " << tEst[i] <<"\n";
     	}
-
 	}while(codP[contadorW]!=0);
 	return 0;
 }
