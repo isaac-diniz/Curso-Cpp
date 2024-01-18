@@ -12,7 +12,7 @@ int main(){
 	for(int i=0; i<tL; i++){
 		cin>>log[i];
 	}
-	cout<<"\n\nAlunos de linguagem010:\n";
+	cout<<"\n\nAlunos de linguagem:\n";
 	for(int i=0; i<tP; i++){
 		cin>>ling[i];
 	}
