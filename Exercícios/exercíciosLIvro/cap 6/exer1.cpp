@@ -1,9 +1,9 @@
 /*
-Faça um programa que preencha um vetor com seis elementos numéricos inteiros. Calcule e mostre: 
-¦¦ todos os números pares; 
-¦¦ a quantidade de números pares; 
-¦¦ todos os números ímpares; 
-¦¦ a quantidade de números ímpares.
+Faï¿½a um programa que preencha um vetor com seis elementos numï¿½ricos inteiros. Calcule e mostre: 
+ï¿½ï¿½ todos os nï¿½meros pares; 
+ï¿½ï¿½ a quantidade de nï¿½meros pares; 
+ï¿½ï¿½ todos os nï¿½meros ï¿½mpares; 
+ï¿½ï¿½ a quantidade de nï¿½meros ï¿½mpares.
 */
 #include <iostream>
 using namespace std;
@@ -26,9 +26,10 @@ int main(){
 		cout<<p[i]<<"; ";
 	}
 	cout<<"\na quantidade de numeros pares digitados e: "<<y<<"\n";
+	cout<<"\nos numeros impares inseridos sao:\n";
 	for(int i=0; i<z; i++){
 		cout<<im[i]<<"; ";
 	}
-	cout<<"\na quantidade de numeros pares digitados e: "<<z<<"\n";
+	cout<<"\na quantidade de numeros impares digitados e: "<<z<<"\n";
 	return 0;
 }
