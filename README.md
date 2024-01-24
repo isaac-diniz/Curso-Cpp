@@ -1,11 +1,11 @@
-# Curso C++
+# C++ Course
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/isaac-diniz/Curso_C--/blob/main/LICENSE) 
 
-Curso feito com o intuito de dominar a linguagem e posteriormente entrar no mercado de trabalho com a mesma.
+Course carried out with the aim of mastering the programming language and subsequently entering the job market with it.
 
-## Tecnologias utilizadas
+## Technologies used:
 - C++
 
-# Autor
+# Author:
 
 José Isaac Diniz Martins Batista
