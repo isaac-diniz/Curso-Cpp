@@ -8,63 +8,38 @@ e mostrar:
 */
 #include <iostream>
 using namespace std;
-int main(){
-    string month1;
-    double value[12][4], month[12]={0}, year=0;
-    for(int i=0; i<12; i++){
-        for(int z=0; z<4; z++){
-            cout<<"\nInsira o valor vendido na semana: "<<z+1<<", do Mes: "<<i+1<<endl;
-            cin>>value[i][z];
-            month[i]+=value[i][z];
-        }
-        year+=month[i];
-    }
-    for(int i=0; i<12; i++){
-        switch(i)
-        {
-        case 0:
-            month1="Janeiro";
-            break;
-        case 1:
-            month1="Fervereiro";
-            break;
-        case 2:
-            month1="Marco";
-            break;
-        case 3:
-            month1="Abril";
-            break;
-        case 4:
-            month1="Maio";
-            break;
-        case 5:
-            month1="Junho";
-            break;
-        case 6:
-            month1="Julho";
-            break;
-        case 7:
-            month1="Agosto";
-            break;
-        case 8:
-            month1="Setembro";
-            break;
-        case 9:
-            month1="Outubro";
-            break;
-        case 10:
-            month1="Novembro";
-            break;
-        case 11:
-            month1="Dezembro";
-            break;
 
+int main() {
+    string months[12] = {"Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
+
+    double value[12][4];
+    double monthTotal[12] = {0};
+    double yearTotal = 0;
+
+    for (int i = 0; i < 12; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout << "\nInsira o valor vendido na semana " << j + 1 << " do mes de " << months[i] << ": ";
+            cin >> value[i][j];
+            monthTotal[i] += value[i][j];
         }
-        cout<<"\nO valor vendido no mes de "<<month1<<" foi de: "<<month[i];
-        for(int z=0; z<4; z++){
-            cout<<"\nO valor vendido na semana "<<z+1<<" de "<<month1<<" e de: "<<value[i][z];
-        }
+        yearTotal += monthTotal[i];
     }
-    cout<<"\n\nO valor vendido no ano inteiro e de: "<<year;
+
+    cout << "\nTotal vendido por mes:\n";
+    for (int i = 0; i < 12; i++) {
+        cout << months[i] << ": " << monthTotal[i] << endl;
+    }
+
+    cout << "\nTotal vendido por semana:\n";
+    for (int j = 0; j < 4; j++) {
+        double weekTotal = 0;
+        for (int i = 0; i < 12; i++) {
+            weekTotal += value[i][j];
+        }
+        cout << "Semana " << j + 1 << ": " << weekTotal << endl;
+    }
+
+    cout << "\nTotal vendido no ano inteiro: " << yearTotal << endl;
+
     return 0;
 }
