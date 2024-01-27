@@ -10,6 +10,11 @@ ou exame);
 #include <iostream>
 using namespace std;
 int main(){
-    
+    for(int i=0; i<15; i++){
+        for (int z=0; z<5; z++){
+            cin
+        }
+        
+    }
     return 0;
 }
