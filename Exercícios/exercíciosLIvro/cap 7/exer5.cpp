@@ -10,7 +10,7 @@ e mostrar:
 using namespace std;
 int main(){
     string month1;
-    double value=[12][4], month[12]={0}, year=0;
+    double value[12][4], month[12]={0}, year=0;
     for(int i=0; i<12; i++){
         for(int z=0; z<4; z++){
             cout<<"\nInsira o valor vendido na semana: "<<z+1<<", do Mes: "<<i+1<<endl;
@@ -29,7 +29,7 @@ int main(){
             month1="Fervereiro";
             break;
         case 2:
-            month1="Março";
+            month1="Marco";
             break;
         case 3:
             month1="Abril";
@@ -60,10 +60,11 @@ int main(){
             break;
 
         }
-        cout<<"O valor ve"
+        cout<<"\nO valor vendido no mes de "<<month1<<" foi de: "<<month[i];
         for(int z=0; z<4; z++){
-            cout<<"\nInsira o valor vendido na semana: "<<z+1<<", do Mes: "<<i+1<<endl;
+            cout<<"\nO valor vendido na semana "<<z+1<<" de "<<month1<<" e de: "<<value[i][z];
         }
     }
+    cout<<"\n\nO valor vendido no ano inteiro e de: "<<year;
     return 0;
 }
