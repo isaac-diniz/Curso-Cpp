@@ -12,7 +12,7 @@
  11.  valor ←  sal * perc / 100 
  12.  RETORNE valor 
  13. FIM_SUB_ROTINA calculo 
-*/
+
 #include <stdio.h>
 void soma(int a, int b)
 { 
@@ -30,4 +30,20 @@ int main()
    soma(a,b); 
    getchar();
    return 0;
+}
+*/
+#include <iostream>
+using namespace std;
+void somar(int a, int b){
+    int s;
+    s=a+b;
+    cout<<"A soma e: "<<s;
+}int main(){
+    int a, b;
+    cout<<"Insira o primeiro numero: ";
+    cin>>a;
+    cout<<"Insira o segundo numero: ";
+    cin>>b;
+    somar(a, b);
+    return 0;
 }
