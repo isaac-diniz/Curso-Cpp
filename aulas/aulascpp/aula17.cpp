@@ -7,7 +7,7 @@ int main(){
 	//segunda parte e a condição (verdade - executa)
 	//terceira é o controle do contador
 	for(int x=0, y=10; x<=10 && y>=0; x++, y--){
-		cout<<x<<" "<<y<<"\n";
+		cout<<x<<" ola mundo "<<y<<"\n";
 		//codigo
 	}
 	return 0;
