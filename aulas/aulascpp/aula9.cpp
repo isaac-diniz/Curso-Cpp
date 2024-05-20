@@ -5,22 +5,22 @@ int main()
 	int exemplo = 0;
 	bool ex = true;
 	
-	//tipos de teste lógicos:
+	//tipos de teste lï¿½gicos:
 	// <, >, <=, >=, ==, !=
 	if(ex)
 	{
-		//teste lógico é verdade
+		//teste lï¿½gico ï¿½ verdade
 		cout<<"saida 1";
 	}else
 	{
-		//teste lógico é falso
+		//teste lï¿½gico ï¿½ falso
 		cout<<"saida 2";
 	}
-	//saida 1 é verdadeira quando usamos "ex" que é bool true, logo cai como teste lógico verdadeiro
-	//saida 1 é falsa quando usamos "exemplo" que tem valor bool == 0 (falso), logo cai como falso
+	//saida 1 ï¿½ verdadeira quando usamos "ex" que ï¿½ bool true, logo cai como teste lï¿½gico verdadeiro
+	//saida 1 ï¿½ falsa quando usamos "exemplo" que tem valor bool == 0 (falso), logo cai como falso
 	
 	//bool -> true, 1 --- false, 0
 	
-	//em outros casos, usariamos comparações matemáticas normalmente
+	//em outros casos, usariamos comparaï¿½ï¿½es matemï¿½ticas normalmente
 	return 0;
 }
