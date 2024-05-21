@@ -19,7 +19,7 @@ dessa forma, não necessariamente, precisa ser atribuido um valor a tal função
 int main(){
 
     example();
-    //saída: \nexemplo\n
+    //saída: \nexemplo
     example("o valor interno passado pela chamada sobressai o valor padrão dos argumentos.");
     //saída: o valor interno passado pela chamada sobressai o valor padrão dos argumentos.
 
