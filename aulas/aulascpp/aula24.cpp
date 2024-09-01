@@ -11,6 +11,7 @@ using namespace std;
 para fazer isso, basta passar um valor padrão para o(s) argumento(s) da função
 segue o exemplo
 */
+//função prototipada:
 void example(string text="\nexemplo");
 /*
 dessa forma, não necessariamente, precisa ser atribuido um valor a tal função
